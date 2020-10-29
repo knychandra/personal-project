@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Martel Sans', sans-serif;
+    background-color: black;
+}
+
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#searchInput,
+button {
+    border-radius: 1em;
+    padding: 5px;
+}
+
+button {
+    background-color: rgb(229, 9, 20);
+    border: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+    width: 100px;
+    margin-left: 5px;
+    transition: 0.35s all;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-3.5px);
+    box-shadow: 0px 2px 15px 0px rgba(255, 255, 255, 1)
+}
+
+.form {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#searchInput {
+    width: 450px;
+    text-align: center;
+}
+
+#searchInput:focus {
+    outline: none;
+}
+
+#searchForm {
+    margin-top: 15px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    font-weight: 600;
+    color: rgb(299, 9, 20);
+}
+
+header img {
+    width: 20em;
+}
+
+
+
+#movie-container {
+    margin-top: 50px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul li {
+    margin-top: 25px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    max-width: 210px;
+}
+
+ul li img {
+    box-shadow: 1px 1px 15px 0px rgba(229, 9, 20, 1)
+}
+
+ul li span {
+    margin-top: 20px;
+    text-align: center;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.2em;
+    color: #fff;
+}
+
+@media (max-width: 800px) {
+    #searchInput {
+        width: 300px;
+    }
+
+    button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+    }
+
+    ul li {
+        margin: 0;
+        margin-top: 50px;
+    }
+}
